@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            #white-background{
+                display:none;
+                width:100%;
+                height:100%;
+                position:fixed;
+                top:0px
+            }
+        </style>
+    </head>
+    <body>    
+        User Name : 
+        <input type="text" name="uname" placeholder="Enter user name" required>
+        </br></br></br>
+        Password : 
+        <input type="password" name="pwd" placeholder="Enter password" required>
+        </br></br></br>
+        <input type="submit" value="submit">
+        <div id="white-background"></div>
+        <div id="dlgbox">
+            <div id="dlg-header">Login</div>
+            <div id="dlg-body">Kindly login to continue.</div>
+            <div id="dlg-footer">
+                <button onclick="dlglogin()">Log in</button>
+            </div>
+        </div>
+
+        <h1>Dialog box demo</h1>
+        <button onclick="ShowDialog()">Click me!</button>
+        <script>
+            function dlglogin(){
+                var whitebg=document.getElementById("white-background")
+                var dlg = document.getElementById("dlgbox")
+                whitebg.style.display = "block";
+                dlg.style.display = "block";
+                var winWidth = window.innerWidth
+            }
+        </script>
+    </body>
+</html>  
+
+
+//https://www.youtube.com/watch?v=5db30o8DQiI
